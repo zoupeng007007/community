@@ -7,9 +7,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.ContextConfiguration;
 
+import java.util.Date;
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
 @ContextConfiguration(classes = CommunityApplication.class)
@@ -27,6 +27,20 @@ class DiscussPostMapperTest {
     @Test
     void selectDiscussPostRows() {
         int rows= discussPostMapper.selectDiscussPostRows(0);
+        System.out.println(rows);
+    }
+
+    @Test
+    void  insertDiscussPost(){
+        DiscussPost discussPost = new DiscussPost();
+        discussPost.setCommentCount(1);
+        discussPost.setContent("test");
+        discussPost.setCreateTime(new Date());
+        discussPost.setScore(10);
+        discussPost.setTitle("test");
+        discussPost.setStatus(1);
+        discussPost.setUserId(1);
+        int rows = discussPostMapper.insertDiscussPost(discussPost);
         System.out.println(rows);
     }
 }

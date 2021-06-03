@@ -58,7 +58,7 @@ public class Page {
     }
 
     /*显示前后五行*/
-    public int getTo(){
+    public int getTo() {
         int to = current + 2;
         int total = getTotal();
         return Math.min(total, to);

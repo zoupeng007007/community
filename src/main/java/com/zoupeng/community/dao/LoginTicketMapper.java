@@ -7,6 +7,10 @@ import org.springframework.stereotype.Component;
 
 @Mapper
 @Component
+@Deprecated
+/**
+ * 已将Ticket转移到Redis，不推荐使用
+ */
 public interface LoginTicketMapper {
 
     @Insert({

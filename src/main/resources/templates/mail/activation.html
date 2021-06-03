@@ -2,18 +2,18 @@
 <html lang="en" xmlns:th="http://thymeleaf.org">
 <head>
     <meta charset="utf-8">
-    <link rel="icon" href="https://static.nowcoder.com/images/logo_87_87.png"/>
-    <title>牛客网-激活账号</title>
+    <link rel="icon" th:href="@{logo.png}"/>
+    <title>校园论坛-激活账号</title>
 </head>
 <body>
 	<div>
 		<p>
-			<b th:text="@{email}">xxx@xxx.com</b>, 您好!
+			<b th:text="${email}">xxx@xxx.com</b>, 您好!
 		</p>
 		<p>
-			您正在注册校园论坛, 这是一封激活邮件, 请点击
-			<a th:href="${url}">此链接</a>,
-			激活您的账号!
+			您正在注册校园论坛, 这是一封激活邮件, 请复制此链接
+			<a th:text="${url}"></a>
+			到浏览器激活您的账号!
 		</p>
 	</div>
 </body>

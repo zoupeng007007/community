@@ -21,10 +21,10 @@ body {
 }
 
 header .navbar-brand {
-	background: url('http://static.nowcoder.com/images/res/logo/logo-v3.png') no-repeat;
-	background-size: 147px 42px;
+	background: url('../logo.png') no-repeat;
+	background-size: 147px 147px;
 	width: 147px;
-	height: 42px;
+	height: 147px;
 	margin: 5px 15px 5px 0;
 }
 
@@ -133,6 +133,11 @@ a:hover {
 .bg-gray {
 	background: #eff0f2;
 }
+
+.bg-div {
+	background: dimgray;
+}
+
 
 .user-header {
 	width: 50px;

@@ -2,9 +2,7 @@ package com.zoupeng.community.dao;
 
 import com.zoupeng.community.entity.User;
 import org.apache.ibatis.annotations.Mapper;
-import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Repository;
 
 //@Repository
 @Mapper

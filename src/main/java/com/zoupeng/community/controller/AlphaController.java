@@ -125,6 +125,18 @@ public class AlphaController {
         list.add(emp);
         list.add(emp);
         list.add(emp);
+        Integer.valueOf("abc");
         return list;
     }
+
+    //ajax示例
+    @RequestMapping(path = "/ajax",method = RequestMethod.POST)
+    public String testAjax(String name, int age){
+        System.out.println(name);
+        System.out.println(age);
+        HashMap<String, Object> stringObjectHashMap = new HashMap<>();
+        stringObjectHashMap.put(name,age);
+        return "{'code':0,'status':3}";
+    }
+
 }
